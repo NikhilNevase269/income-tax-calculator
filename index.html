@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main container -->
+     <h1>Income Tax Calculator</h1>
+    <div class="container">
+    <form>
+        <!-- radio-buttons -->
+        <div class="radio-buttons">
+            <input type="radio" name="tax-type" id="oldType" value="oldT" checked>
+            <label>Old Tax Regime</label>
+
+            <input type="radio" name="tax-type" id="newType" value="newT">
+            <label>New Tax Regime</label>
+        </div>
+        <!-- income input fields -->
+        <div class="income-input">
+            <label>Income:</label>
+            <input type="number" name="income" min="0" step="50000" class="input-field">
+        </div>
+        <div class="age-input" id="age">
+            <label>Age:</label>
+            <input type="number" name="age" step="1" min="18" class="input-field">
+        </div>
+    </form>
+    <!-- submit button -->
+    <button id="submit-button">Calculate</button>
+    </div>
+    <!-- result statement -->
+    <div class="result">
+        <p id="result-statement">Hey, Calculate your income tax here.</p><br>
+        <p id="suggestion"></p>
+    </div>
+    <a href="https://economictimes.indiatimes.com/wealth/income-tax-slabs?from=mdr" target="_blank">To know more about old and new tax regime.</a>
+</body>
+<script src="script.js"></script>
+</html>

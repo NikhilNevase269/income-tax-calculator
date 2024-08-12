@@ -1,0 +1,87 @@
+body{
+    background-color: #353535;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: black;
+}
+form{
+    padding: 40px;  
+    /* background-color: #212121;  */
+}
+input{
+    height: 30px;
+    /* font-size: 1rem; */
+}
+.income-input,.age-input{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+}
+.visible {
+    opacity: 1;
+    height: auto;
+    padding: 10px; 
+    margin: 10px;
+    transition: opacity 0.5s ease, height 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+}
+.container{
+    padding: 30px;
+    border: solid black 1px;
+    border-radius: 15px;
+    background-color: rgb(56, 182, 117);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.radio-buttons{
+    justify-content: center;
+    align-items: center;
+}
+#submit-button{
+    margin-top: 10px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    /* padding: 10px; */
+    border: solid black 1px;
+    border-radius: 15px;
+    background-color: rgb(56, 182, 117);
+}
+
+#result-statement, #suggestion {
+    margin: 10px 0; /* Adjusted margin for paragraphs */
+    padding: 5px;   /* Adjusted padding for paragraphs */
+    max-width: 80%; /* Limits the width to avoid excessive expansion */
+    text-align: center; /* Centers the text */
+}
+
+
+a{
+    font-size: large;
+    color: rgba(139, 220, 180, 0.721);
+}
